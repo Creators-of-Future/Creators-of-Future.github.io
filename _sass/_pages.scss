@@ -208,25 +208,25 @@ select:focus {
 }
 
 input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input:not([type=checkbox]):not([type=radio])::-moz-placeholder, textarea::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input:not([type=checkbox]):not([type=radio])::-ms-input-placeholder, textarea::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input:not([type=checkbox]):not([type=radio])::placeholder,
 textarea::placeholder,
 select::invalid {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .button {
