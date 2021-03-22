@@ -140,7 +140,7 @@ hr {
     margin: 0 auto;
 }
 
-.glitch:after {
+header:hover .glitch:after {
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -173,7 +173,7 @@ hr {
     }
 }
 
-.glitch:before {
+header:hover .glitch:before {
     content: attr(data-text);
     position: absolute;
     left: -2px;
