@@ -97,20 +97,24 @@
     background: var(--color-secondary-text);
     transition: background-color 0.1s ease;
 
-    mask-size: 20px;
-    mask-repeat: no-repeat;
-    mask-origin: center;
+    -webkit-mask-size: 20px;
+
+            mask-size: 20px;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-origin: center;
+            mask-origin: center;
 }
 
 .social-links a:hover .social-icon {
     background-color: var(--color-highlight);
 }
 
-.social-icon--twitter { mask-image: url('/assets/images/social/twitter.svg') }
-.social-icon--linkedin { mask-image: url('/assets/images/social/linkedin.svg') }
-.social-icon--y-combinator { mask-image: url('/assets/images/social/y-combinator.svg') }
-.social-icon--github { mask-image: url('/assets/images/social/github.svg') }
-.social-icon--email { mask-image: url('/assets/images/social/email.svg') }
+.social-icon--twitter { -webkit-mask-image: url('/assets/images/social/twitter.svg'); mask-image: url('/assets/images/social/twitter.svg') }
+.social-icon--linkedin { -webkit-mask-image: url('/assets/images/social/linkedin.svg'); mask-image: url('/assets/images/social/linkedin.svg') }
+.social-icon--y-combinator { -webkit-mask-image: url('/assets/images/social/y-combinator.svg'); mask-image: url('/assets/images/social/y-combinator.svg') }
+.social-icon--github { -webkit-mask-image: url('/assets/images/social/github.svg'); mask-image: url('/assets/images/social/github.svg') }
+.social-icon--email { -webkit-mask-image: url('/assets/images/social/email.svg'); mask-image: url('/assets/images/social/email.svg') }
 
 
 .share-menu-heading {
@@ -154,7 +158,9 @@
 }
 
 select {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-image: url(/images/icons/chevron-down.svg);
     background-position: right 12px center;
     background-repeat: no-repeat;
@@ -199,6 +205,22 @@ select:active,
 select:focus {
     border: 1px solid rgba(255, 255, 255, 0.75);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+}
+
+input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:not([type=checkbox]):not([type=radio])::-moz-placeholder, textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:not([type=checkbox]):not([type=radio])::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 input:not([type=checkbox]):not([type=radio])::placeholder,
@@ -373,10 +395,14 @@ label.radio-container, label.checkbox-container {
     cursor: pointer;
     background: rgba(white, 0.5);
     position: absolute;
-    mask-size: 24px;
-    mask-repeat: no-repeat;
-    mask-origin: center;
-    mask-image: url(/assets/images/copy.svg);
+    -webkit-mask-size: 24px;
+            mask-size: 24px;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-origin: center;
+            mask-origin: center;
+    -webkit-mask-image: url(/assets/images/copy.svg);
+            mask-image: url(/assets/images/copy.svg);
     top: calc(50% - 12px);
     right: 12px;
     height: 24px;
