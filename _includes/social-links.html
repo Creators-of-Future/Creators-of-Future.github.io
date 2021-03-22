@@ -1,0 +1,7 @@
+<div class="social-links">
+    {% for social in site.social-links %}
+    <a href="{{ social.url }}" target="_blank" rel="noreferrer" title="{{ social.title }}">
+        <div class="social-icon  social-icon--{{social.title}}"></div>
+    </a>
+    {% endfor %}
+</div>

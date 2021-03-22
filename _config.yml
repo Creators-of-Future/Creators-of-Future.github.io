@@ -1,0 +1,42 @@
+url: 'https://creatorsoffuture.com'
+twitter-username: creatorsoffuture
+
+title: Creators of Future
+description: |
+  Creators of Future is a free mentorship program to help more people become generalists.
+
+incremental: true
+
+defaults:
+  -
+    scope:
+      path: _posts/*
+    values:
+      layout: post
+
+date_format: '%b %d, %Y'
+permalink: pretty
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+include: ['_pages']
+
+social-links:
+  - title: twitter
+    url: 'https://twitter.com/kushsolitary'
+  - title: github
+    url: 'https://github.com/kushsolitary'
+  - title: linkedin
+    url: 'https://www.linkedin.com/in/kushagra-agarwal-549b7666/'
+  - title: email
+    url: 'mailto:kushagra@hey.com'
+
+plugins:
+  - 'jekyll-autoprefixer'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

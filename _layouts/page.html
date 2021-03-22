@@ -1,0 +1,32 @@
+{% include head.html %}
+
+<body class="inner">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content-wrapper__left">
+                <div class="content-wrapper__sticky">
+                    <div>
+                        <h1>{{ page.title }}</h1>
+                        <p class="m-t-24">{{ page.description }}</p>
+                    </div>
+                </div>
+
+                <div class="hidden-on-mobile">
+                    {% include footer.html %}
+                </div>
+            </div>
+
+            <div class="content-wrapper__right">
+                <div class="content">
+                    {{ content }}
+                </div>
+                
+                <div class="mobile-only">
+                    {% include footer.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+.homepage-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.homepage .logo {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.top-graphic {
+    height: 600px;
+    position: relative;
+    // background: url(/assets/images/top-graphic.svg) no-repeat;
+    // background-size: 2000px;
+    // background-position: center calc(50% - 20px);
+}
+
+.top-graphic__center-piece {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 16px);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+
+.top-graphic__hand {
+    position: absolute;
+    top: -20px;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 1000px 800px;
+}
+
+.top-graphic__hand--left {
+    left: 0;
+    background-image: url(/assets/images/left-hand.svg);
+    background-position: center right;
+}
+
+.top-graphic__hand--right {
+    right: 0;
+    background-image: url(/assets/images/right-hand.svg);
+    background-position: center left;
+}
+
+.post-tile {
+    display: flex;
+    justify-content: space-between;
+
+    .divider {
+        flex-grow: 1;
+        margin: 14px 12px;
+    }
+}
+
+.post-tile:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+.post-details {
+    flex: 0 0 34rem;
+}
+
+.post-date {
+    line-height: 2rem;
+    white-space: nowrap;
+}
+
+.post-title a {
+    font-weight: 600;
+}
+
+.social-links {
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6px;
+}
+
+.social-links a {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 6px;
+    background: rgba(white, 0.1);
+}
+
+.social-icon {
+    height: 20px;
+    width: 20px;
+    background: var(--color-secondary-text);
+    transition: background-color 0.1s ease;
+
+    mask-size: 20px;
+    mask-repeat: no-repeat;
+    mask-origin: center;
+}
+
+.social-links a:hover .social-icon {
+    background-color: var(--color-highlight);
+}
+
+.social-icon--twitter { mask-image: url('/assets/images/social/twitter.svg') }
+.social-icon--linkedin { mask-image: url('/assets/images/social/linkedin.svg') }
+.social-icon--y-combinator { mask-image: url('/assets/images/social/y-combinator.svg') }
+.social-icon--github { mask-image: url('/assets/images/social/github.svg') }
+.social-icon--email { mask-image: url('/assets/images/social/email.svg') }
+
+
+.share-menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share-menu-heading .divider {
+    margin-left: 12px;
+    flex: 1;
+}
+
+.share-menu a {
+    display: block;
+    color: var(--color-secondary-text);
+    margin-top: 8px;
+}
+
+.share-menu a:hover {
+    color: var(--color-highlight);
+}
+
+.signup-form {
+    width: 100%;
+    margin-top: 20px;
+
+    p {
+        margin-top: 32px;
+    }
+}
+
+.signup-form__success {
+    margin-top: 20px;
+}
+
+.homepage-button {
+    margin-top: 40px;
+    min-width: 168px;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    background-image: url(/images/icons/chevron-down.svg);
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    font-family: "IBM Plex Sans", sans-serif;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+    padding-top: 12px;
+    line-height: 24px;
+    resize: none;
+}
+
+input:not([type=checkbox]):not([type=radio]):hover,
+textarea:hover,
+select:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+input:not([type=checkbox]):not([type=radio]):active,
+input:not([type=checkbox]):not([type=radio]):focus,
+textarea:active,
+textarea:focus,
+select:active,
+select:focus {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+}
+
+input:not([type=checkbox]):not([type=radio])::placeholder,
+textarea::placeholder,
+select::invalid {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    background: var(--color-highlight);
+    height: 48px;
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 48px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-background);
+
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+.button:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+}
+
+.button .button__loader {
+    display: none;
+}
+
+.button.button--show-loader {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button.button--show-loader .button__loader {
+    display: inline;
+}
+
+.button.button--show-loader .button__text {
+    display: none;
+}
+
+.signup-form .button {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.signup-form input:not([type=checkbox]):not([type=radio]),
+.signup-form textarea,
+.signup-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.signup-form textarea {
+    height: 112px;
+}
+
+label.radio-container, label.checkbox-container {
+    display: inline-block;
+    margin: 0;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:focus-within {
+        outline: none;
+        border: none;
+        border: 1px solid rgba(white, 0.5);
+    }
+
+    input { 
+		-webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: none;
+    }
+
+    .fake-radio, .fake-checkbox {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 4px;
+        border-radius: 50%;
+        margin-right: 5px;
+        border: 1px solid var(--color-highlight);
+
+        &:after {
+            content: '';
+            height: 10px;
+            width: 10px;
+            background: white;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 50%;
+            opacity: 0;
+        }
+    }
+
+    .fake-checkbox {
+        border-radius: 4px;
+
+        &:after { border-radius: 2px }
+    }
+
+    input:checked + .fake-radio:after,
+    input:checked + .fake-checkbox:after {
+        opacity: 1;
+    }
+}
+
+.addresses {
+    margin-top: 24px;
+}
+
+.address__field {
+    font-family: "IBM Plex Mono", monospace;
+    padding: 16px 48px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 8px;
+    color: white;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+
+    &:before {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        left: 75%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(to right, transparent, var(--color-background) 60%)
+    }
+}
+
+.address__field__copy {
+    display: inline-block;
+    cursor: pointer;
+    background: rgba(white, 0.5);
+    position: absolute;
+    mask-size: 24px;
+    mask-repeat: no-repeat;
+    mask-origin: center;
+    mask-image: url(/assets/images/copy.svg);
+    top: calc(50% - 12px);
+    right: 12px;
+    height: 24px;
+    width: 24px;
+    transition: background 0.2s ease;
+    z-index: 1;
+}
+
+.address__field--btc {
+    border: 1px solid #F7931A;
+    background-image: url(/assets/images/btc.svg);
+}
+
+.address__field--eth {
+    border: 1px solid #627EEA;
+    background-image: url(/assets/images/eth.svg);
+}
+
+.address__field:not(:first-of-type) {
+    margin-top: 12px;
+}
+
+.address__field:hover {
+    border: 1px solid white;
+}
+
+.address__field__copy:hover {
+    background: rgba(white, 0.75);
+}

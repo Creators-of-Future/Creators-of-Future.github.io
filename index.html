@@ -1,0 +1,230 @@
+---
+title: Creators of Future
+---
+
+{% include head.html %}
+
+<body class="homepage">
+    <div class="container  container--with-border">
+        <div class="top-graphic">
+            <div class="top-graphic__hand  top-graphic__hand--left"></div>
+            <img class="top-graphic__center-piece" src="/assets/images/logo.svg" height="270" alt="">
+            <div class="top-graphic__hand  top-graphic__hand--right"></div>
+        </div>
+        <header>
+            <h1 class="p-t-24">
+                Creators of <span class="heading-highlight  glitch" data-text="Future">Future</span>
+            </h1>
+            <img class="m-t-32" src="/assets/images/arrow-down.svg" alt="" height="32" width="60">
+        </header>
+
+        <div class="content-wrapper">
+            <div class="content-wrapper__left">
+                <p class="large-text">
+                    <span class="highlight">The future belongs to the generalists.</span>
+                    The more tools you have in your arsenal,
+                    the better you'll navigate the uncertainty
+                    of the rapidly changing world.
+                </p>
+
+                <h2>What's Creators of Future?</h2>
+                <p>
+                    Creators of Future is a mission to help more people become generalists.
+                    I think being a designer with development skills or vice-versa is underrated.
+                    The ability to create usable and delightful stuff out of nothing is magical.
+                    It's a super-power. Add marketing and sales, and you're unstoppable.
+                </p>
+                <p>
+                    The first batch of this program is for people who: 
+
+                    <strong>
+                        want to build iOS apps; already have an idea; are either a designer or a developer.
+                    </strong>
+
+                    The mentorship will involve one-on-one guidance on UI/UX or SwiftUI,
+                    depending on your existing skillset.
+                </p>
+                <p>
+                    If you belong to the above cohort, reach out via the form. I'll select up to
+                    <strong>5 applications</strong>, beginning April 1st, 2021, who will also be the first members
+                    of the Creators of Future Tribe. I'll help you in the journey of publishing
+                    your app to the App Store from start to finish. (If you already have an app
+                    published and are looking to improve your design skills, feel free to apply as well).
+                </p>
+
+                <h2>How Much Does it Cost?</h2>
+                <p>
+                    This is a <strong>free</strong>, no-strings-attached mentorship program.
+                    <strong>
+                        The long-term goal of this program is to create a strong network of generalists and
+                        founders.
+                    </strong>
+                </p>
+                <p>
+                    If you, however, strongly believe in the mission and want to support it,
+                    you can sponsor via <a href="https://patreon.com">Patreon</a> or donate via BTC or ETH.
+                </p>
+                <div class="addresses">
+                    <div id="btc" class="address__field  address__field--btc">
+                        <span class="address__field__text">bc1qmdu8jr7yzw369t4yv3a4up2p0taw0ymjxw9jwh</span>
+                        <span class="address__field__copy" data-clipboard-target="#btc"
+                            data-clipboard-text="bc1qmdu8jr7yzw369t4yv3a4up2p0taw0ymjxw9jwh"></span>
+                    </div>
+                    <div id="eth" class="address__field  address__field--eth">
+                        <span class="address__field__text">0x45fc15Cb5E400a3ce8E34087c3A7e55be1906971</span>
+                        <span class="address__field__copy" data-clipboard-target="#eth"
+                            data-clipboard-text="0x45fc15Cb5E400a3ce8E34087c3A7e55be1906971"></span>
+                    </div>
+                </div>
+
+
+                <h2>About Me</h2>
+                <div class="about-first-para">
+                    <img src="/assets/images/me.jpg" height="100" width="100" alt="">
+                    <p>
+                        Hi, I am <strong>Kushagra Agarwal</strong>. I started my career in 2010,
+                        and I've been a generalist throughout—mostly wearing
+                        the hat of a designer, but also helping with development on the side.
+                    </p>
+                </div>
+                <p>
+                    I've also worked on several side-projects, most notably,
+                    <a href="https://cssbattle.dev">CSSBattle</a>,
+                    <a href="https://cone.app">Cone</a>, and
+                    <a href="https://unwind.to">Unwind</a>.
+                    Apart from design and development, side projects have also taught
+                    me a bunch about marketing, sales, and growth.
+                </p>
+                <p>
+                    Through this mentorship, I aim to share all that I've learned throughout my
+                    career and help you become a generalist and a future creator.
+                </p>
+
+                <p class="m-b-24">
+                    If you have any questions, suggestions, concerns, or if you are a
+                    generalist and would like to be a part of this mission, please
+                    <a href="mailto:kushagra@hey.com">reach out</a>.
+                    Let's build the future together. ✌
+                </p>
+
+                {% include social-links.html %}
+            </div>
+
+            <div class="content-wrapper__right">
+                <div class="content-wrapper__sticky">
+                    <h2>Apply Here</h2>
+                    <form class="signup-form" action="https://formspree.io/f/moqyavzk" method="POST">
+                        <label class="visuallyhidden" for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" required placeholder="Full Name">
+
+                        <label class="visuallyhidden" for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required placeholder="Email Address">
+
+                        <label class="visuallyhidden" for="website">website Address</label>
+                        <input type="url" name="website" id="website" required
+                            placeholder="Twitter, LinkedIn, GitHub, or Website">
+
+                        <label class="visuallyhidden" for="description">Description</label>
+                        <textarea name="description" id="description" required
+                            placeholder="Describe your app idea, or share any links showcasing your idea (Github, Figma, App Store, etc)."></textarea>
+
+                        <p>What do you specialize in?</p>
+                        <label for="design" class="radio-container">
+                            <input type="radio" name="specialization" id="design" value="design" required checked>
+                            <div class="fake-radio"></div>
+                            <span>Design</span>
+                        </label>
+                        <label for="dev" class="radio-container">
+                            <input type="radio" name="specialization" id="dev" required value="dev">
+                            <div class="fake-radio"></div>
+                            <span>Development</span>
+                        </label>
+
+
+                        <button class="button  signup-form__submit">
+                            <span class="button__text">Submit</span>
+                            <svg class="button__loader" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <g>
+                                    <path
+                                        d="M10.998 22a.846.846 0 010-1.692 9.308 9.308 0 000-18.616 9.286 9.286 0 00-7.205 3.416.846.846 0 11-1.31-1.072A10.978 10.978 0 0110.998 0c6.075 0 11 4.925 11 11s-4.925 11-11 11z">
+                                    </path>
+                                    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+                                        from="0 11 11" to="360 11 11" dur="1s" calcMode="linear"
+                                        repeatCount="indefinite">
+                                    </animateTransform>
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <p class="signup-form__success  displayNone">
+                        Thank you for sending in your application! I've successfully received it, and I'll reach out
+                        to you regarding the status in the coming weeks.
+                    </p>
+
+                    <p class="signup-form__error  displayNone">Oops, an error was encountered while submitting the form.
+                        Please share the details directly on <a
+                            href="mailto:hi@creatorsoffuture.com">hi@creatorsoffuture.com</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            {% include footer.html %}
+        </div>
+    </div>
+
+    <script src="/assets/scripts/clipboard.min.js"></script>
+    <script>
+        // Form Submission
+        let form = document.querySelector('.signup-form');
+        let successMessage = document.querySelector('.signup-form__success');
+        let errorMessage = document.querySelector('.signup-form__error');
+        let submitButton = document.querySelector('.signup-form__submit');
+
+        function handleSubmit(e) {
+            e.preventDefault();
+
+            submitButton.classList.add('button--show-loader');
+            var data = new FormData(form);
+            console.log(data)
+
+            fetch(e.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                successMessage.classList.remove('displayNone')
+                form.classList.add('displayNone');
+                form.reset()
+                submitButton.classList.remove('button--show-loader')
+            }).catch(error => {
+                errorMessage.classList.remove('displayNone')
+                submitButton.classList.remove('button--show-loader')
+            });
+        }
+
+        form.addEventListener('submit', handleSubmit, false)
+
+        // Copy address
+        const clipboard = new ClipboardJS('.address__field__copy');
+        clipboard.on('success', (e) => {
+            e.clearSelection()
+            const target = document.querySelector(e.trigger.getAttribute('data-clipboard-target'))
+                .querySelector('.address__field__text')
+            showSuccessMessage(target, e.text)
+        })
+
+        function showSuccessMessage(target, resetTo) {
+            target.innerText = 'Copied to clipboard!'
+            setTimeout(function () {
+                target.innerText = resetTo
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>
