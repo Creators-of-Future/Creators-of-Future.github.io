@@ -36,6 +36,7 @@ social-links:
 
 plugins:
   - 'jekyll-autoprefixer'
+  - 'jekyll-minifier'
 
 exclude:
   - Gemfile
